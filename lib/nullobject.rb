@@ -12,6 +12,7 @@ module Null
   def to_f; 0.0; end
   def to_i; 0; end
   def nil?; true; end
+  def as_json(*); nil; end
 
   def inspect
     "#<%s:0x%x>" % [self.class, object_id]
